@@ -1,0 +1,303 @@
+.certificate-text {
+    font-size: 1em;
+    color: #000000;
+    margin-top: 5px;
+    
+}
+.Expertise {
+  margin-top: 20px;
+}
+
+
+/* Basic Reset and Font */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4;  */
+    /* Light background for contrast */
+    color: #333;
+    font-size: 14px; /* Base font size */
+    line-height: 1.6;
+}
+
+.resume-container {
+    max-width: 850px; /* Adjust width as needed */
+    margin:  auto;
+    background-color: #fff;
+    padding: 40px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+}
+
+/* Header Styles */
+.resume-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* For absolute positioning of contact info if needed */
+}
+
+.photo {
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-right: 30px;
+}
+
+.photo img {
+    width: 120px; /* Adjust size */
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #facc15; /* Yellow border */
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.header-main {
+    flex-grow: 1;
+}
+
+.header-main h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.8em; /* Large name */
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.header-main h2 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #555;
+    border-bottom: 2px solid #facc15; /* Yellow underline */
+    display: inline-block; /* Make underline fit content */
+    padding-bottom: 2px;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #444;
+}
+
+.contact-info p {
+    margin: 2px 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
+
+/* Dividers */
+hr.divider {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+hr.divider.short {
+    width: 100%; /* Make short divider full width */
+    margin: 15px 0;
+}
+
+
+/* Summary Section */
+.summary p {
+    font-size: 1.05em;
+    color: #444;
+    text-align: justify;
+}
+
+/* General Section Styling */
+.section {
+    margin-bottom: 25px;
+}
+
+.section-header {
+    background-color: #facc15; /* The specific yellow color */
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section-header i {
+    color: #000;
+    font-size: 1.3em;
+    margin-right: 12px;
+    width: 20px; /* Fixed width for alignment */
+    text-align: center;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #000;
+}
+
+.section-content {
+    padding-left: 5px; /* Slight indent for content */
+}
+
+/* Work Experience & Education Entries */
+.job-entry, .education-entry, .project-entry {
+    margin-bottom: 20px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+}
+
+.entry-header h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #000;
+}
+
+.job-entry .entry-header .dates,
+.education-entry .entry-header .dates {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: #555;
+}
+
+
+.job-entry .role {
+    font-size: 1.05em;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    color: #333;
+}
+.job-entry .role strong {
+     font-weight: 700;
+}
+
+.education-entry .institution {
+    font-size: 1.05em;
+    margin: 2px 0;
+    color: #444;
+}
+.education-entry .dates-edu {
+     font-size: 0.95em;
+     color: #666;
+     margin: 2px 0;
+}
+
+
+/* Project Section */
+.project-entry h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.project-entry ul li strong {
+    font-weight: 700;
+    color: #000;
+}
+.project-entry ul li {
+    margin-bottom: 8px;
+}
+
+
+/* Lists (Bullets) */
+.section-content ul {
+    list-style: none;
+    padding-left: 20px; /* Indentation for bullets */
+    margin: 0;
+}
+
+.section-content ul li {
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px; /* Space for the bullet */
+}
+
+/* Custom bullet */
+.section-content ul li::before {
+    content: '•';
+    color: #facc15; /* Yellow bullet */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Multi-column Lists (Expertise, Skill, Language) */
+.multi-column-list ul {
+    padding-left: 0; /* Reset padding */
+    column-count: 3; /* Create 3 columns */
+    column-gap: 30px; /* Space between columns */
+}
+
+.multi-column-list ul li::before {
+     position: static; /* Reset position for multi-column */
+     margin-right: 8px; /* Space after bullet */
+}
+
+.multi-column-list ul li {
+    padding-left: 0; /* Reset padding */
+    margin-bottom: 8px;
+    break-inside: avoid-column; /* Prevent items breaking across columns */
+}
+
+
+/* Responsive Adjustments (Optional Example) */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .resume-header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .photo {
+        margin-bottom: 15px;
+        align-self: center; /* Center photo on mobile */
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .entry-header .dates {
+        margin-top: 3px;
+    }
+
+    .multi-column-list ul {
+        column-count: 2; /* Use 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+     .header-main h1 {
+        font-size: 2.2em;
+    }
+    .header-main h2 {
+        font-size: 1.2em;
+    }
+    .multi-column-list ul {
+        column-count: 1; /* Use 1 column on very small screens */
+    }
+}
